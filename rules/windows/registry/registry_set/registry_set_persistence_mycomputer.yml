@@ -14,7 +14,8 @@ logsource:
     product: windows
 detection:
     selection:
-        TargetObject|contains: '\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer'
+        TargetObject|contains: '\SOFTWARE\'
+        TargetObject|contains: '\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\'
         TargetObject|endswith: '(Default)'
     condition: selection
 falsepositives:
