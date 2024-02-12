@@ -16,7 +16,8 @@ detection:
         CommandLine|contains|all:
             - 'rundll32'
             - 'javascript'
-            - '..\..\mshtml,RunHTMLApplication'
+            - '..\..\mshtml,'
+        CommandLine|endswith: 'RunHTMLApplication'
     selection2:
         CommandLine|contains: ';document.write();GetObject("script'
     condition: 1 of selection*
