@@ -21,19 +21,19 @@ detection:
         QueryName|expand: '%internal_domains%'
     filter_optional_trusted_domains: # Mostly certificate distribution domains
         - QueryName:
-            - 'oscp.comodoca.com'
-            - 'oscp.sectigo.com'
-            - 'oscp.starfieldtech.com'
-            - 'ocsp.usertrust.com'
-            - 'crl.starfieldtech.com'
-            - 'officecdn.microsoft.com'
-            - 'oneocsp.microsoft.com'
-            - 'www.python.org'
+              - 'oscp.comodoca.com'
+              - 'oscp.sectigo.com'
+              - 'oscp.starfieldtech.com'
+              - 'ocsp.usertrust.com'
+              - 'crl.starfieldtech.com'
+              - 'officecdn.microsoft.com'
+              - 'oneocsp.microsoft.com'
+              - 'www.python.org'
         - QueryName|endswith:
-            - '.entrust.net'
-            - '.digicert.com'
-            - '.globalsign.net'
-            - '.verisign.com'
+              - '.entrust.net'
+              - '.digicert.com'
+              - '.globalsign.net'
+              - '.verisign.com'
 falsepositives:
     - Script files making domain expected domain requests
 level: low
