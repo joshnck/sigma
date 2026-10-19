@@ -14,7 +14,7 @@ detection:
     selection_regobjectname:
         TargetObject|endswith: '\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU'
     selection_regstringValue:
-        Details|contains: 
+        Details|contains:
             - cmd
             - pwsh
             - powershell
@@ -22,8 +22,8 @@ detection:
             - wsl
             - wscript
             - cscript
-    selection_operation: 
-        Details|contains: 
+    selection_operation:
+        Details|contains:
             - ' in '
             - ' do '
     condition: all of selection_*
